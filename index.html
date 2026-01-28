@@ -4,6 +4,7 @@
   <title>Trade Price List</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <h1>Trade Price List</h1>
@@ -15,7 +16,7 @@
 
     for (let i = 1; i <= totalSlots; i++) {
       const img = document.createElement("img");
-      img.src = `images/Trade${i}.jpg`;
+      img.src = `images/trade${i}.jpg`;
       img.onerror = () => img.style.display = "none";
       document.getElementById("gallery").appendChild(img);
     }
